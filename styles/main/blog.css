@@ -1,0 +1,47 @@
+.main__blog {
+    height: 211px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.09);
+}
+
+.blog__content {
+    height: 200px;
+    width: 300px;
+}
+
+.content__text,
+.content__link {
+    font-family: 'CarlitoRegular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content__text {
+    width: 265px;
+    height: 140px;
+    margin-top: 18px;
+    margin-bottom: 1px;
+    margin-left: 22px;
+    line-height: 23px;
+    word-spacing: 0.1px;
+    color: var(--text-secondary-color);
+    overflow: hidden;
+}
+
+.content__link {
+    margin-left: 196px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    font-style: italic;
+    color: var(--main-color);
+}
+
+.content__link:hover {
+    color: var(--secondary-color);
+}
+
+a[name="blog"] {
+    align-self: flex-start;
+}

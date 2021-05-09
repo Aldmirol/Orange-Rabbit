@@ -1,0 +1,20 @@
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border-bottom: 3px solid #CC830F;
+}
+
+.footer > span {
+    margin-bottom: 2px;
+    margin-left: 14px;
+    word-spacing: 1.2px;
+    letter-spacing: 0.6px;
+    font-size: 33px;
+    font-weight: 200;
+    font-family: "StMarie-ExtraLight", sans-serif;
+    color: #FEF3E0;
+
+}

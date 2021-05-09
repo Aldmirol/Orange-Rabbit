@@ -1,0 +1,63 @@
+@import "./contact/form.css";
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 105px 70px 127px 118px;
+    grid-template-areas: 
+    "name"
+    "email"
+    "message"
+    "button";
+}
+
+.contact__name {
+    grid-area: name;
+}
+
+.contact__email {
+    grid-area: email;
+}
+
+.contact__message {
+    grid-area: message;
+}
+
+.contact__button {
+    grid-area: button;
+    position: relative;
+}
+
+.contact__heading {
+    height: 69px;
+}
+
+.contact__heading,
+.contact__name,
+.contact__email,
+.contact__message {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.name,
+.email,
+.message {
+    width: 1203px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact__inner {
+    box-sizing: border-box;
+    height: 46px;
+    margin-left: 37px;
+    font-family: "StMarie-ExtraLight", sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}

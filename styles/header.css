@@ -1,0 +1,53 @@
+@import "./header/navigation.css";
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 600px 1fr;
+    grid-template-rows: 128px;
+    grid-template-areas: ". company . nav .";
+    grid-area: header;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: company;
+}
+
+.container__logo {
+    width: 40%;
+}
+
+.logo__image {
+    padding-left: 18px;
+    padding-bottom: 8px;
+}
+
+.container__company {
+    width: 60%;
+    height: 110px;
+}
+
+.company__heading {
+    display: block;
+    height: 47px;
+    padding-top: 5px;
+    margin-left: 41px;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.company__footing {
+    margin-left: 37px;
+    font-family: 'Bebas-Regular', sans-serif;
+    font-size: 37px;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+.header__nav {
+    grid-area: nav;
+}

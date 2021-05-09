@@ -1,0 +1,114 @@
+.header__nav,
+.nav__container,
+.nav__icon {
+    display: flex;
+}
+
+.nav__container,
+.nav__icon {
+    flex-direction: column;
+}
+
+.header__nav,
+.nav__container {   
+    justify-content: space-between;
+}
+
+.nav__container {
+    align-items: center;
+    width: 25%;
+}
+
+.nav__icon {
+    justify-content: flex-end;
+    height: 66px;
+    text-decoration: none;
+}
+
+.icon-home-icon:before {
+    font-size: 46px;
+}
+
+.icon-about-icon:before{
+    font-size: 44px;
+}
+
+.icon-work-icon:before {
+    font-size: 42px;
+}
+
+.icon-blog-icon:before {
+    font-size: 40px;
+}
+
+.icon-contact-icon:before {
+    font-size: 33px;
+}
+
+.nav__link {
+    height: 51px;
+    align-self: center;
+    text-decoration: none;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.6px;
+    color: var(--text-main-color);
+}
+
+.home {
+    margin-right: 4px;
+}
+
+.about {
+    margin-left: 9px;
+}
+
+.work {
+    margin-right: 8px;
+}
+
+.blog {
+    margin-left: 7px;
+}
+
+.contact {
+    margin-left: 46px;
+}
+
+.home-link {
+    margin-right: 6px;
+}
+
+.about-link,
+.work-link {
+    margin-left: 3px;
+}
+
+.blog-link {
+    margin-left: 4px;
+}
+
+.contact-link {
+    margin-left: 42px;
+}
+
+.nav__container:hover a,
+.nav__container:hover .icon-home-icon:before,
+.nav__container:hover .icon-about-icon:before,
+.nav__container:hover .icon-work-icon:before,
+.nav__container:hover .icon-blog-icon:before,
+.nav__container:hover .icon-contact-icon:before {
+    color: var(--main-color);
+}
+
+.nav__hide__menu,
+.nav__hide__input {
+    display: none;
+}
+
+
+
+
+
+

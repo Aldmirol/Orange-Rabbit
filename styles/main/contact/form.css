@@ -1,0 +1,70 @@
+.name > span,
+.email > span,
+.message > span {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-family: "StMarie-ExtraLight", sans-serif;
+    color: var(--main-color);
+}
+
+.email > span {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+.message > span {
+    margin-top: 4px;
+} 
+
+.name > input,
+.email > input,
+.message > textarea {
+    width: 1064px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    background-color: #F8F7F5;
+    border-bottom: none;
+    border-right: none;
+    border-top: 2px solid #D2D1CF;
+    border-left: 5px solid #D2D1CF;
+}
+
+.name > input,
+.email > input {
+    height: 31px;
+}
+
+.message > textarea {
+    height: 88px;
+    resize: none;
+}
+
+.name__value:focus,
+.email__value:focus,
+.message__value:focus {
+    outline: 2px solid var(--main-color);
+}
+
+.button {
+    position: absolute;
+    top: 20px;
+    left: 1194px;
+    width: 175px;
+    height: 48px;
+    background-color: var(--main-color);
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    font-family: "StMarie-ExtraLight", sans-serif;
+    color: #FEF3E0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:3px solid #CC830F;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-bottom:3px solid var(--text-secondary-color);
+}

@@ -1,0 +1,294 @@
+@import "./styles/layout.css";
+@import "./styles/header.css";
+@import "./styles/main.css";
+@import "./styles/footer.css";
+@import "./fonts/fonts.css";
+
+:root {
+    --main-color: #FB9B06;
+    --secondary-color: #6E6D6B;
+    --text-main-color: #9E9B9B;
+    --text-secondary-color: #131313;
+}
+
+@media screen and (max-width: 1650px) {
+    body {
+        grid-template-columns: 1fr 1250px 1fr;
+    }
+
+    .heading__image {
+        width: 1250px;
+    }
+
+    .main__heading {
+        height: auto;
+    }
+
+    .heading__text:first-of-type {
+        left: 20px;
+        top: 32px;
+    }
+
+    .heading__text:last-of-type {
+        left: 10px;
+        top: 125px;
+    }
+
+    .main__heading:hover .heading__text:first-of-type {
+        animation: none;
+    }
+
+    .main__heading:hover .heading__text:last-of-type {
+        animation: none;
+    }
+
+    .main__blog {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .designer__heading,
+    .designer__image,
+    .designer__info {
+        margin-left: 0;
+    }
+
+    .developer__heading,
+    .developer__image,
+    .developer__info {
+        margin-right: 0;
+    }
+
+    .contact__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 1305px) {
+    body {
+        grid-template-columns: 1fr 1100px 1fr;
+    }
+
+    .heading__image,
+    .name,
+    .email,
+    .message {
+        width: 1100px;
+    }
+
+    .header {
+        grid-template-columns: 500px 600px;
+        grid-template-areas: "company nav";
+    }
+
+    .name > input,
+    .email > input,
+    .message > textarea {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    body {
+        grid-template-columns: 1fr 750px 1fr;
+    }
+
+    .heading__image {
+        width: 750px;
+    }
+
+    .container__company span {
+        font-size: 30px;
+    }
+
+    .name,
+    .email,
+    .message {
+        width: 700px;
+    }
+
+    .header {
+        grid-template-columns: 250px 500px;
+        grid-template-areas: "company nav";
+    }
+
+    .container__company > span {
+        margin-left: 15px;
+    }
+
+    .nav__container > a:first-child {
+        margin: 0 auto;
+    }
+
+    .nav__link {
+        margin: 0 auto;
+    }
+
+    .main__heading > .heading__text {
+        width: 180px;
+        height: 50px;
+    }
+
+    .main__heading > .heading__text > span {
+        font-size: 17px;
+        margin: 0 auto;
+    }
+
+    .heading__text:first-of-type {
+        left: 20px;
+        top: 32px;
+    }
+
+    .heading__text:last-of-type {
+        left: 10px;
+        top: 105px;
+    }
+
+    .main__about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 65px 460px 450px 450px;
+        grid-template-areas: 
+        "team"
+        "designer"
+        "director"
+        "developer";
+    }
+
+    .main__about * {
+        margin: 0 auto;
+    }
+
+    .about__designer {
+        margin-top: 10px;
+    }
+
+    a[name="about"] {
+        grid-area: team;
+    }
+
+    .footer > span {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        grid-template-columns: 1fr 420px 1fr;
+    }
+
+    .heading__image {
+        display: none;
+    }
+
+    .main__heading {
+        height: 200px;
+    }
+
+    .name,
+    .email,
+    .message {
+        width: 410px;
+        font-size: 10px;
+    }
+
+    .nav__hide__menu {
+        display: block;
+        grid-area: nav;
+        width: 80px;
+        padding-top: 20px;
+        padding-left: 100px;
+        font-size: 80px;
+        color: var(--main-color);
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .nav__icon {
+        display: none;
+    }
+
+    .nav__link {
+        height: 22px;
+    }
+
+    .nav__container {
+        height: 39px;
+        width: 79.5px;
+        justify-content: center;
+        background-color: #fff;
+        border-bottom: 0.5px solid var(--main-color);
+        border-right: 0.5px solid var(--main-color);
+    }
+
+    .nav__hide__input:checked + .header__nav {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        left: 342px;
+        top: 130px;
+        opacity: 0.9;
+    }
+
+    .main__heading> .heading__text {
+        width: 420px;
+        height: 100px;
+    }
+
+    .main__heading > .heading__text > span {
+        font-size: 21px;
+    }
+
+    .heading__text:first-of-type {
+        left: 0px;
+        top: 0px;
+    }
+
+    .heading__text:last-of-type {
+        left: 0px;
+        top: 100px;
+    }
+
+    .contact__inner {
+        font-size: 22px;
+    }
+
+    .name > input,
+    .email > input,
+    .message > textarea {
+        width: 60%;
+    }
+
+    .button {
+        width: 140px;
+        height: 40px;
+        font-size: 30px;
+    }
+
+    .footer > span {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .nav__hide__input:checked+.header__nav {
+        left: 339px;
+    }
+
+    .name,
+    .email,
+    .message {
+        width: 370px;
+    }
+}

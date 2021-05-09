@@ -1,0 +1,42 @@
+@import "./about/team.css";
+
+.main__about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65px 535px;
+    grid-template-areas: 
+    "   .      team       ."
+    "designer director developer";
+}
+
+.about__designer {
+    grid-area: designer;
+}
+
+.about__director {
+    grid-area: director;
+}
+
+.about__developer {
+    grid-area: developer;
+}
+
+.about__heading {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: team;
+}
+
+.heading__inner {
+    width: 280px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-left: 25px;
+    font-family: "StMarie-ExtraLight", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
